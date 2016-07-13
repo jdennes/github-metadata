@@ -51,6 +51,7 @@ RSpec.describe("integration into a jekyll site") do
     "pages_hostname"       => "github.io",
     "help_url"             => "https://help.github.com",
     "api_url"              => "https://api.github.com",
+    "asset_host_url"       => "https://assets.github.com",
     "versions"             => proc {
       begin
         require 'github-pages'

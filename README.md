@@ -84,6 +84,7 @@ Some `site.github` values can be overridden by environment variables.
 - `PAGES_ENV` – the `site.github.pages_env` (default: `dotcom`)
 - `PAGES_API_URL` – the `site.github.api_url` (default: `https://api/github.com`)
 - `PAGES_HELP_URL` – the `site.github.help_url` (default: `https://help.github.com`)
+- `PAGES_ASSET_HOST_URL` – the `site.github.asset_host_url` (default: `https://assets.github.com`)
 - `PAGES_GITHUB_HOSTNAME` – the `site.github.hostname` (default: `https://github.com`)
 - `PAGES_PAGES_HOSTNAME` – the `site.github.pages_hostname` (default: `github.io`)
 

@@ -6,6 +6,7 @@ module Jekyll
           'PAGES_ENV'              => 'dotcom'.freeze,
           'PAGES_API_URL'          => 'https://api.github.com'.freeze,
           'PAGES_HELP_URL'         => 'https://help.github.com'.freeze,
+          'PAGES_ASSET_HOST_URL'   => 'https://assets.github.com'.freeze,
           'PAGES_GITHUB_HOSTNAME'  => 'github.com'.freeze,
           'PAGES_PAGES_HOSTNAME'   => 'github.io'.freeze,
           'SSL'                    => 'false'.freeze,
@@ -59,6 +60,10 @@ module Jekyll
 
         def help_url
           trim_last_slash env_var('PAGES_HELP_URL', ENV['HELP_URL'])
+        end
+
+        def asset_host_url
+          trim_last_slash env_var("PAGES_ASSET_HOST_URL", ENV["ASSET_HOST_URL"])
         end
 
         def github_hostname
